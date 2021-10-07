@@ -11,3 +11,5 @@ This Almabetter Capstone Project(EDA) is the training project completed by the f
 4. Vridhi Parmar
 
 Working together with the team to solve the project which is "Explore and analyze the data to discover results and statistics for different teams playing in IPL".
+
+## intro
