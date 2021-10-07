@@ -14,9 +14,27 @@ This Almabetter Capstone Project(EDA) is the training project completed by the f
 
 Working together with the team to solve the project which is "Explore and analyze the data to discover results and statistics for different teams playing in IPL".
 
-## Datasets
+## Problem Statement:
+### We want to find out:-
+1.	The Number of 6's Scored in a season
+2.	Total runs scored
+3.	Number of half centuries by each batsman
+4.	Number of centuries by each batsman
+5.	Comparison between the teams
+6.	Batsman who scored the most number of dot balls.
+7.	Most common dismissal type in IPL
+8.	Bowler having more than 100 wickets in IPL
+9.	No of matches each season
+10.	No of matches on a particular Venue
+11.	No of matches played by each team
+12.	Number of wins per team
+13.	Top players of the match
+14.	How lucky are the toss wining team
+15.	Batsman Analysis
+16.	The Number of 4's Scored in a season
 
-So what can we expect from the multiple IPL datasets?
+## Approach:
+### So what can we expect from the multiple IPL datasets?
 It contains 6 datasets:
 1.	matches.csv
 2.	Players.xlsx
@@ -25,29 +43,35 @@ It contains 6 datasets:
 5.	most_runs_average_strikerate.csv
 6.	teamwise_home_and_away.csv
 
-Number of Players from different countries:
-Players dataset contains information about players' country. We can use group players by country to count numbers of player from particular country.
+First we need to explore each dataset and check each columns. Replace missing values in all the datasets and drop few columns too which were not apart of our analysis. We need to check for the unique values in particular column and if needed replace values with similar meaning it with a specific unique name.
 
-Number of Matches played in each city:
-Matches data set contains information about city where the match is hosted. We can count number of matches hosted in the city by grouping the cities data together.
+From players dataset we can calculate most common bating style and bowling style. We can also get information about country from which most player are coming.
 
-Number of Matches per season:
-Matches dataset contains details of season. We can group the matches by its season data and count the number of matches that particular season have.
+From teams dataset we can get names of teams that playing IPL and from matches dataset we can get information about winning team so we can calculate and compare matches won by teams.
 
-Number of boundaries:
-Delivery dataset contains information about each ball delivery, we can calculate number of 4 and 6 runs from each delivery and group them according to seasons to count number of boundaries per season.
+From matches data set we get information about city that hosted most number of matches and we can also calculate number of matches played per IPL season. Matches dataset also contains data about player that won ‘player of match’ award so we can calculate who won the award most number of times. Matches dataset contains information about toss winning, match winning and toss decision. So we can check if winning a toss affects result of winning the match and we can also calculate what decision is made most frequently when a team won the toss.
 
-Player of the match:
-From matches dataset we can calculate number of time a particular player won the player of the match award.
+Delivery dataset contains information about each ball delivery, we can calculate number of 4 and 6 runs from each delivery and group them according to seasons to count number of boundaries per season. We can also calculate each players run individually then we can calculate number of centuries and half centuries made by each player. We can calculate number of dot balls played by each player and check who played most of it.
+Delivery data set also contain information for player dismissal so we can calculate who took most wickets and what is most common type of dismissal is in IPL. 
 
-Number of matches a Team won:
-Matches dataset contains information about winner team. We can calculate number of wins for each team by counting the winner team names.
+From most run average strike rate dataset we can calculate we can calculate most run made by batsman, average run rate and strike rate of top batsmen.
 
-Toss winning:
-Matches dataset contains information about toss winning, match winning and toss decision. So we can check if winning a toss affects result of winning the match and we can also calculate what decision is made most frequently when a team won the toss.
+From teamwise home and away dataset we can get each teams’ win in home town and at other venues.  
 
-Centuries:
-Delivery dataset contains information about match id and run for given ball delivery. We can group data by match and then we can calculate each players run individually, from runs we can calculate number of centuries and half centuries.
-
-
- 
+## Conclusion:
+1.	The number of matches each season is lies between 50 to 80 matches.
+2.	The most number of Matches were hosted in Mumbai and the least were hosted in Venue Bloemfontein.
+3.	The most number of players were from India and the least number of players were playing from Netherland.
+4.	After winning the toss most of the teams choose to Field.
+5.	The  most number of Matches were won by Mumbai Indians with around 109 wins.
+6.	In team comparison we observed that Kolkata Knight Riders lose most of the matches against Mumbai   Indians loosing more than 19 matches.
+7.	The batsman who played most number of dot balls is Virat Kohli.
+8.	The most Dismissal type in IPL is caught out.
+9.	The most Half Centuries was scored by D. A. Warner.
+10.	The Player who won most of the Man of The Match was Chris Gayle
+11.	The average number of Four's and Six's per season lies somewhere around 1800 and 850 respectively.
+12.	The most full centuries was scored by Chris Gayle.
+13.	The most common bowling style is right-arm medium.
+14.	Most of the batsman are right-handers
+15.	V. Sehwag have the highest strike rate.
+16.	S.L. Malinga have the highest number of wickets in the IPL
